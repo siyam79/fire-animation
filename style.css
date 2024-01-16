@@ -175,6 +175,23 @@ ul {
   background: rgba(0, 0, 0, 0.35);
 }
 
-.candle{
-    text-align: center;
-}
+.blinking-glow {
+    width: 100px;
+    height: 180px;
+    left: 50%;
+    top: -55%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: #ff6000;
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(60px);
+    -o-filter: blur(60px);
+    -ms-filter: blur(60px);
+    filter: blur(60px);
+    animation: blinkIt .1s infinite;
+  }
+  
+  @keyframes blinkIt {
+    50% { opacity: .8;}
+  }
+  
